@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Navigation from './components/Navigation'
+import React from 'react'
 
 export const metadata: Metadata = {
   robots: 'index, follow',

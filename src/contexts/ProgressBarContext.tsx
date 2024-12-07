@@ -1,11 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState, createContext, useContext, useCallback } from 'react'
+import React, { useEffect, useState, createContext, useContext, useCallback } from 'react'
 import { usePathname, useRouter as useNextRouter } from 'next/navigation'
 import { AppRouterInstance, NavigateOptions } from 'next/dist/shared/lib/app-router-context.shared-runtime'
 
 interface ProgressBarContextProps extends AppRouterInstance {
-  back(disableProgress?: boolean): void
-  push(href: string, options?: NavigateOptions, disableProgress?: boolean): void
+  back(/* disableProgress?: boolean */): void
+  push(/* href: string,  options?: NavigateOptions, disableProgress?: boolean*/): void
 }
 
 const ProgressBarContext = createContext<ProgressBarContextProps>({
@@ -18,7 +18,7 @@ const ProgressBarContext = createContext<ProgressBarContextProps>({
 })
 
 export const ProgressBarProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [timeout, setNodeTimeout] = useState<NodeJS.Timeout | null>(null)
+  const [timeout, setNodeTimeout] = useState/* <NodeJS.Timeout | null> */(null)
   const [width, setWidth] = useState(0)
 
   const pathname = usePathname()
@@ -82,9 +82,9 @@ export const ProgressBarProvider: React.FC<{ children: React.ReactNode }> = ({ c
     }
 
     const handleMutation: MutationCallback = () => {
-      const anchorElements = document.querySelectorAll('a')
-      const validAnchorELes = Array.from(anchorElements).filter((anchor) => anchor.href && anchor.target !== '_blank')
-      validAnchorELes.forEach((anchor) => anchor.addEventListener('click', handleAnchorClick))
+      const anchorElements = document.querySelectorAll('a');
+      const validAnchorELes = Array.from(anchorElements).filter((anchor) => anchor.href && anchor.target !== '_blank');
+      validAnchorELes.forEach((anchor) => anchor.addEventListener('click', handleAnchorClick));
     }
 
     const mutationObserver = new MutationObserver(handleMutation)

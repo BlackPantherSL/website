@@ -1,6 +1,6 @@
 'use client'
 
-import { memo } from 'react'
+import React, { memo } from 'react'
 import { useMount } from '@/contexts/MountContext'
 import { useNavigationIndex } from '@/contexts/NavigationContext'
 

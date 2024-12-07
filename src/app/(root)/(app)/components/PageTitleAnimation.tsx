@@ -1,6 +1,6 @@
 'use client'
 
-import { memo, useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import { useMount } from '@/contexts/MountContext'
 import { config } from '@react-spring/web'

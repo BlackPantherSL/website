@@ -1,6 +1,6 @@
 'use client'
 
-import { memo } from 'react'
+import React, { memo } from 'react'
 import { animated, useSpring } from '@react-spring/web'
 import { useCursorFollower } from '@/contexts/CursorFollowerContext'
 

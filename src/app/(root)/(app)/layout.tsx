@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import React from 'react'
 import PageTitleAnimation from './components/PageTitleAnimation'
 import RootBackground from './components/RootBackground'
 

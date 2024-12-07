@@ -1,6 +1,7 @@
 import { IRepository } from '@/types'
 import timeFromNow from '@/utils/time-from-now'
 import 'server-only'
+import { RequestInit } from 'next/dist/server/web/spec-extension/request'
 
 const username = process.env.GH_USERNAME || 'dedeard'
 const repositoriesUrl = `https://api.github.com/users/${username}/repos?sort=updated&visibility=public&affiliation=owner`

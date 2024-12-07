@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Logo from './components/Logo'
 import { Metadata } from 'next'
+import React from 'react'
 
 export const metadata: Metadata = {
   title: '404 - Not found',
@@ -22,7 +23,7 @@ export default function NotFoundPage() {
           <span className="block">4</span>
         </h1>
         <p className="mb-6 flex flex-col items-center justify-center text-3xl uppercase">
-          <span className="text-yellow-600">Sorry, there's</span>
+          <span className="text-yellow-600">Sorry, there&apos;s</span>
           <span>nothing here</span>
         </p>
 

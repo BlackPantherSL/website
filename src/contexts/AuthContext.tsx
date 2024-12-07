@@ -8,7 +8,7 @@ interface AuthContextProps {
   isAuthLoading: boolean
   isInitLoading: boolean
   error: string
-  login: (id: 'github.com' | 'google.com') => Promise<void>
+  login: (/* id: 'github.com' | 'google.com' */) => Promise<void>
   logout: () => Promise<void>
 }
 

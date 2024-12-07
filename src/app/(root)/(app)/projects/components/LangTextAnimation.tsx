@@ -1,5 +1,5 @@
 'use client'
-import { memo, useEffect, useState } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import langColors from '@/constans/langColors'
 import { useMount } from '@/contexts/MountContext'
 import { config } from '@react-spring/web'

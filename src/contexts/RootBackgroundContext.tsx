@@ -2,7 +2,7 @@ import React, { createContext, useCallback, useContext, useState } from 'react'
 
 interface RootBackgroundContextType {
   isVideoPlayed: boolean
-  toggleVideo: (play?: boolean) => void
+  toggleVideo: (/* play?: boolean */) => void
 }
 
 const RootBackgroundContext = createContext<RootBackgroundContextType>({

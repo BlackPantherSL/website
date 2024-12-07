@@ -1,5 +1,5 @@
 'use client'
-import { memo } from 'react'
+import React, { memo } from 'react'
 import langColors from '@/constans/langColors'
 import LangBar from './LangBar'
 import LangTextAnimation from './LangTextAnimation'
